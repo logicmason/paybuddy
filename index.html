@@ -1,0 +1,35 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+  To bill a credit card, simply fill out this form:
+  <form>
+    <label>Bill Description:</label>
+    <input type="text" id="desc" /><br>
+    <label>Amount: </label>
+    <input type="text" id="amount" /><br>
+    <label>Credit Card Info:</label> <br>
+    <input type="text" id="number" placeholder="enter number here"/><br>
+    <input type="text" id="ccv" placeholder="CCV"/><br>
+    <input type="date" id="expiration" /><br>
+    <input type="text" id="name" placeholder="Full Name"/><br>
+    <input type="text" id="address1" placeholder="Address"/><br>
+    <input type="text" id="address2" placeholder="(Address cont.)"/><br>
+    <label>Payment type:</label><br/>
+    <label for="frequency"> One Time</label>
+    <input type="radio" name="frequency" value="once" />
+    <label for="frequency"> Monthly</label>
+    <input type="radio" name="frequency" value="monthly" />
+    <label for="frequency"> Annually</label>
+    <input type="radio" name="frequency" value="annually" />
+    <br />
+    <label>Send confirmation email to the purchaser?</label>
+    <input type="checkbox" name="confirmation-email" value="unchecked" />
+    <input type="submit" />
+
+  </form>
+</body>
+</html>
